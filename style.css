@@ -1,0 +1,16 @@
+body{
+    background-image: url('lightblue.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+}
+
+butoon {
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+}
