@@ -9,8 +9,19 @@ div {
     justify-content: center;
 }
 
-butoon {
+/*button {
     height: 50px;
     width: 50px;
     margin: 10px;
+}
+*/
+
+input.TPS {
+    width: 5em;  
+    height: 5em;
+    background-color: wheat;
+    font-size: 15px;
+    
+    font-weight: bold;
+    
 }

@@ -11,14 +11,17 @@
 <body>
 
    
-    <h1>This is a Headingn</h1>
-    <p>This is a paragraph.</p>
-   
     <div>
+        <input type="button" id="number" value="0"/>
         <button id="btn-1">1</button>
         <button id="btn-2">2</button>
         <button id="btn-3">3</button>
+        <button id="btn-4">Home</button>
     </div>
+    
+    
+
+
     <button onclick="runCode()">click me </button>
      <form>
         <input type="button" id="number" value="0"/>
@@ -27,38 +30,59 @@
         <input type="reset"  onclick="Reset()" value="Reset">
        
     </form>
+  
   <br>
-   <h2> Free Throws  &emsp;            &emsp; Field goals  &emsp;            &emsp; Three-point field goals   &emsp;</h2>
+     <div>
+      <h1> Total Scores </h1>
+     </div>
+  
+  <div>
+      
+      <br>
+      <input type="button" id="TP"  value="0" class="TPS"/> 
+  </div>
+  
+  
+    <h2> Free Throws  &emsp;            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Field goals  &emsp;           &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Three-point field goals&emsp;</h2>
   <form>  
       <!-- free throw -->
     
-    <input type="button" onclick="incrementValue('FTM_number')" value="FTM" />
+    <input type="button" onclick="FreeThrows('FTM_number')" value="FTM" />
     <input type="button" id="FTM_number" value="0"/>
-    <input type="button" onclick="incrementValue('FTA_number')" value="FTA" />
+    <input type="button" onclick="FreeThrows('FTA_number')" value="FTA" />
     <input type="button" id="FTA_number" value ="0"/>
+    <input type="button" value="FT%" >
+    <input type="button" id="FTPercent" value="0%"/> 
      <!-- 2 pointer/ field goal -->
-    &emsp;
-    <input type="button" onclick="incrementValue('FGM_number')" value="FGM" />
+    &emsp;&emsp;&emsp;&emsp;&emsp;
+    <input type="button" onclick=" FieldGoal('FGM_number')" value="FGM" />
     <input type="button" id="FGM_number" value="0"/>
-    <input type="button" onclick="incrementValue('FGA_number')" value="FGA" />
+    <input type="button" onclick="FieldGoal('FGA_number')" value="FGA" />
     <input type="button" id="FGA_number" value="0"/>
-    &emsp;&emsp;
+    <input type="button" value="FG%" >
+    <input type="button" id="2Percent" value="0%"/> 
+    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
       <!-- 3 pointer/ field goals -->
-      <input type="button" onclick="incrementValue('3FGM_number')" value="3FGM" />
+      <input type="button" onclick="ThreeFieldGoal('3FGM_number')" value="3FGM" />
       <input type="button" id="3FGM_number" value="0"/>
-      <input type="button" onclick="incrementValue('3FGA_number')" value="3FGA" />
+      <input type="button" onclick="ThreeFieldGoal('3FGA_number')" value="3FGA" />
       <input type="button" id="3FGA_number" value="0"/>
-
+      <input type="button" value="3FG%" >
+      <input type="button" id="3Percent" value="0%"/> 
  </form>
+ 
  <br>
 <form>
     <h2> Rebounds  &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; Assist</h2>
      <!-- rebounds -->
-      <input type="button" onclick="TotalReb('D_Rebound')" value="DREB" />
-      <input type="button" id="D_Rebound" value="0"/>
+    
+      <input type="button"  onclick="TotalReb('D_Rebound')" value="DREB"  />
+       <input type="button" id="D_Rebound"     value="0" />
+
       <input type="button" onclick="TotalReb('O_Rebound')" value="OREB" />
       <input type="button" id="O_Rebound" value="0"/>
-      <input type="button" on="TotalReb('Total_Rebound')" value="Total Rebound" >
+
+      <input type="button" value="Total Rebound" >
       <input type="button" id="Total_Rebound" value="0"/> 
       &emsp; &emsp;&emsp; &emsp; 
       <!-- ASSist-->
